@@ -52,18 +52,32 @@ function Home () {
     const [activesInOperation, setActivesInOperation] = useState(0)
     const [activesInAlert, setActivesInAlert] = useState(0)
     const [activesInDownTime, setActivesInDownTime] = useState(0)
+    const [totalCollectsUptime, setTotalCollectsUptime] = useState(0)
 
     useEffect(()=> {
 
         fetch('https://my-json-server.typicode.com/tractian/fake-api/assets')
         .then(async (res) => await res.json())
-        .then((json) => setActives(json));
+        .then((json) => {setActives(json)})
+        
+    },[])
+
+    useEffect(()=>{
+
+        initCounter()
+
+    },[actives])
+
+    function initCounter () {
+
+        console.log(actives)
 
         var activesInOperationTemp = 0
         var activesInAlertTemp = 0
         var activesInDownTimeTemp = 0
+        var totalCollectsUptimeTemp = 0
 
-        actives.map((active)=>{
+        actives.map((active, index)=>{
 
             if(active.status == 'inAlert')
                 activesInAlertTemp = activesInAlertTemp + 1
@@ -72,14 +86,16 @@ function Home () {
             else if (active.status == 'inDowntime')
                 activesInDownTimeTemp = activesInDownTimeTemp + 1
 
+            totalCollectsUptimeTemp = active.metrics.totalCollectsUptime + totalCollectsUptimeTemp
+
         })
-        console.log(activesInOperationTemp)
 
         setActivesInAlert(activesInAlertTemp)
         setActivesInOperation(activesInOperationTemp)
         setActivesInDownTime(activesInDownTimeTemp)
+        setTotalCollectsUptime(totalCollectsUptimeTemp)
         
-    },[])
+    }
 
     return (
 
@@ -143,7 +159,7 @@ function Home () {
                             <div className='boxHome maxWidth' >
 
                                 <p>Tempo total de coleta:</p>
-                                <p>16 hrs</p>
+                                <p>{totalCollectsUptime}</p>
                                 
                             </div>
 
@@ -158,7 +174,7 @@ function Home () {
                             <div className='boxHome maxWidth' >
 
                                 <p>Data da última coleta:</p>
-                                <p>16 hrs</p>
+                                <p>14/06/21 - 14:35:06</p>
                                 
                             </div>
 
@@ -173,7 +189,7 @@ function Home () {
                             <div className='boxHome maxWidth' >
 
                                 <p>Total de coletas:</p>
-                                <p>16 hrs</p>
+                                <p>65.143</p>
                                 
                             </div>
 

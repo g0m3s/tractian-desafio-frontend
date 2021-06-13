@@ -108,16 +108,13 @@ export default function Header (props) {
                     <li className='flexDisplayCenter' >
 
                         <Link to='/ativos' className='flexDisplayBetween' >
-                            <img src={userIcon} alt="icone de usuário" />
                             <p>Ativos</p>
-
                         </Link>
                     </li>
 
                     <li className='flexDisplayCenter' >
 
                         <Link to='/empresas' className='flexDisplayBetween'>
-                            <img src={enterpriseIcon} alt="enterprise Icon" />
                             <p>Empresas</p>
                         </Link>
 
@@ -126,18 +123,14 @@ export default function Header (props) {
                     <li className='flexDisplayCenter' >
 
                         <Link to='/unidades' className='flexDisplayBetween'>
-                            <img src={unitsIcon} alt="icone de unidades" />
                             <p>Unidades</p>
-
                         </Link>
                     </li>
                     
                     <li className='flexDisplayCenter' >
 
                         <Link to='/usuarios' className='flexDisplayBetween' >
-                            <img src={userIcon} alt="icone de usuário" />
                             <p>Usuários</p>
-
                         </Link>
                     </li>
 

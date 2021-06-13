@@ -93,6 +93,8 @@ function Actives () {
                 <p>Ativos</p>
             </div>
 
+            <span className='spanTips' >Clique em um item para mais informações</span>
+
             <section className='sectionActives' >
 
                 <div className='leftSide' >
@@ -100,7 +102,7 @@ function Actives () {
                     {actives.map(item => (
 
                         <div 
-                            className='defaultBox flexDisplayBetween boxActives'
+                            className='boxActives'
                             onClick={()=>{handleModalInfos(item)}}
                         >
 
@@ -128,7 +130,6 @@ function Actives () {
                                     </div>
                                 
                             }
-                            <h4>{}</h4>
                             
                         </div>
                         

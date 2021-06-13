@@ -28,24 +28,6 @@ body {
 
 }
 
-.defaultBox {
-
-    cursor: pointer;
-    break-inside: avoid-column;
-    padding: 15px 0px;
-    box-shadow: 0px 0px 5px rgb(197, 197, 197);
-
-}
-
-/* .defaultBox2 {
-
-    padding: 10px 8px;
-    margin: 8px 0;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px rgb(197, 197, 197);
-
-} */
-
 .defaultDiv {
 
     width: 100vw;
@@ -81,9 +63,9 @@ body {
 .leftSide {
 
     width: 80vw;
-    min-height: 100vh;
-    column-count: 3;
-    padding-left: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -109,12 +91,37 @@ body {
 
 }
 
+
+.divModal {
+
+    width: 100vw;
+    position: relative;
+
+}
+
+.divModal span{
+
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 13%;
+    z-index: 400;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #185ef6;
+
+}
+
 @media screen and (max-width: 768px) {
 
     .leftSide {
 
-        column-count: 1;
-        padding-left: 0;
     
     }
 

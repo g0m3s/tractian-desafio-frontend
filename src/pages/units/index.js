@@ -80,20 +80,19 @@ function Actives () {
                 <p>Unidades</p>
             </div>
 
-            <section className='sectionActives' >
+            <span className='spanTips' >Clique em um item para mais informações</span>
+
+            <section className='sectionUnits' >
 
                 <div className='leftSide' >
 
                     {units.map(item => (
 
-                        <div className='defaultBox flexDisplayBetween boxActives' onClick={() => { handleModalInfos(item) }}>
+                        <div className='boxUnits' onClick={() => { handleModalInfos(item) }}>
 
                             <img src={logo} />
 
                             <h3>Empresa Teste - {item.name}</h3>
-                            {/* <h3>{companies[item.companyId - 1].name} - {item.name}</h3> */}
-
-                            <h4>{}</h4>
                             
                         </div>
                         
@@ -101,7 +100,7 @@ function Actives () {
 
                 </div>
 
-                <div className="rightSide" >lado direito</div>
+                <div className="rightSide" >lado direitsdao</div>
                 
             </section>
 

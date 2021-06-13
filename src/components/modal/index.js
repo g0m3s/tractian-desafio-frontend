@@ -20,7 +20,7 @@ function Modal (props) {
 
     const [displayDivEditInfos, setDisplayDivEditInfos] = useState('none')
 
-    const [infosActives, setInfosActives] = useState({name: '', email: ''})
+    const [infosActives, setInfosActives] = useState({name: '', image: ''})
 
     function handleDisplayDivEditInfos () {
 
@@ -57,6 +57,15 @@ function Modal (props) {
         })
         
     }
+
+    // function updateActivesInfos (newName, newImage) {
+        
+    //     infosActives
+
+    //     setDataUnity(temp)
+    //     alert('Nome alterado! saia desta tela para ver as alterações')
+        
+    // }
 
     useEffect(()=> {
 

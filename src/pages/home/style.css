@@ -17,6 +17,13 @@
 
 }
 
+.spanTips {
+
+    font-size: 8pt;
+    color: rgb(190, 190, 190);
+
+}
+
 .sectionHome {
 
     display: flex;

@@ -1,34 +1,55 @@
-.Actives {
+.sectionUnits {
 
-    width: 100vw;
+    width: 100%;
     display: flex;
+
+}
+
+.boxUnits {
+
+    width: 20vw;
+    height: 30vh;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0px 0px 5px rgb(197, 197, 197);
+    
+}
+
+.boxUnits img {
+
+    width: 80%;
+    border-radius: 5px;
 
 }
 
-.divModal {
+.boxUnits h3 {
 
-    width: 100vw;
-    position: relative;
-
-}
-
-.divModal span{
-
-    width: 20px;
-    height: 20px;
-    padding: 8px;
-    color: white;
-    position: absolute;
-    top: 25px;
-    left: 8%;
-    z-index: 400;
-    cursor: pointer;
-    border-radius: 50%;
+    font-size: 13pt;
     text-align: center;
-    background-color: #185ef6;
 
 }
 
+@media screen and (max-width: 768px) {
+
+    .sectionUnits {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .boxUnits {
+
+        width: 100%;
+        padding: 20px 10px;
+
+    }
+
+
+}
