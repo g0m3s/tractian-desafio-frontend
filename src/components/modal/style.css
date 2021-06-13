@@ -1,0 +1,168 @@
+.Modal{
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    z-index: 300;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(160, 160, 160, 0.35);
+
+}
+
+.Modal main {
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.textAlterInfosModal {
+
+    width: 100%;
+    font-size: 9pt;
+    text-align: center;
+
+}
+
+.textAlterInfosModal b{
+
+    cursor: pointer;
+    color: #185ef6;
+
+}
+
+.infoModal {
+
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-bottom: 6vh;
+
+}
+
+.infoModal b {
+
+    color: #185ef6;
+    padding-left: 5px;
+
+}
+
+.alterInfoModal {
+
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.alterInfoModal input {
+
+    width: 80%;
+    border: none;
+    height: 40px;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(197, 197, 197);
+
+}
+
+.alterInfoModal select {
+
+    width: 80%;
+    border: none;
+    height: 40px;
+    padding: 8px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(197, 197, 197);
+
+}
+
+.buttonSendAlterModal {
+
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 8vh;
+    background-color: #185ef6;
+
+}
+
+/* actives */
+
+.activesInfoModal {
+
+    width: 100%;
+    text-align: center;
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.activesInfoModal img {
+
+    width: 80%;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+.infosActive {
+
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+.infosActive h4 {
+
+    margin: 5px 0px;
+
+}
+
+.infosActive b {
+
+    margin-left: 5px;
+    color: #185ef6;
+
+}
+
+.infosActive ul {
+
+    list-style: square;
+    margin-left: 30px;
+
+}
+
+.infosActive li {
+
+    font-size: 10pt;
+
+}

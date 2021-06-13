@@ -1,0 +1,34 @@
+.Actives {
+
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.divModal {
+
+    width: 100vw;
+    position: relative;
+
+}
+
+.divModal span{
+
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 8%;
+    z-index: 400;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #185ef6;
+
+}
+

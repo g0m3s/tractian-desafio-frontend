@@ -1,0 +1,247 @@
+header {
+
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #185ef6;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.logo {
+
+    display: flex;
+    width: 230px;
+    padding-right: 5vw;
+    align-items: center;
+
+}
+
+.logo img {
+
+    margin-top: .4rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+}
+
+.menu {
+
+    width: 40vw;
+    display: flex;
+    padding-left: 5vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu ul {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu li {
+
+    padding: 5px;
+    font-size: 12pt;
+    cursor: pointer;
+    list-style: none;
+
+}
+
+.menu a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+/* .menu a:hover {
+
+    opacity: 0.6;
+    border-bottom: 5px solid white;
+
+} */
+
+.menu-mobile {
+
+    display: none;
+
+}
+
+.sandwich {
+
+    display: none;
+
+}
+
+.sandwich input {
+
+    opacity: 0;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .sandwich {
+
+        display: block;
+        display: flex;
+        align-items: center;
+        padding-right: 5px;
+
+    }
+
+    .sandwich label {
+
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 5px;
+        width: 50px;
+
+    }
+
+    .sandwich span {
+
+        position: absolute;
+        height: 3px;
+        width: 30px;
+        background: #FFF;
+        transition: .5s ease-in-out;
+
+    }
+
+    .sandwich span:nth-child(1) {
+
+        position: absolute;
+        top: -8px;
+        height: 3px;
+        width: 30px;
+        background: #FFF;
+
+    }
+
+    .sandwich span:nth-child(3) {
+
+        position: absolute;
+        top: 8px;
+        height: 3px;
+        width: 30px;
+        background: #FFF;
+
+    }
+
+    #checkbox:checked + label span:nth-child(1) {
+
+        transform: rotate(-225deg);
+        top: 0px;
+
+    }
+
+    #checkbox:checked + label span:nth-child(2) {
+
+        opacity: 0;
+
+    }
+
+    #checkbox:checked + label span:nth-child(3) {
+
+        transform: rotate(225deg);
+        top: 0px;
+
+    }
+
+    .menu-mobile {
+
+        width: 45vw;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #185ef6;
+
+    }
+
+    .TractianLogoMobile  {
+
+        background-color: #185ef6;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid white;
+
+    }
+
+    .TractianLogoMobile img {
+
+        width: 80%;
+
+    }
+
+    .menu-mobile ul {
+
+        margin: 0;
+        padding: 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+    }
+
+    .menu-mobile li {
+
+        width: 100%;
+        cursor: pointer;
+        padding: 15px 0px;
+
+    }
+
+    .menu-mobile li a {
+
+        color: #FFF;
+        text-decoration: none;
+
+    }
+
+    .menu-mobile li img {
+
+        width: 25px;
+        padding-right: 15px;
+
+    }
+
+    .menu-mobile li p {
+
+        font-size: 9pt;
+
+    }
+
+    .menu-mobile a:hover {
+
+        opacity: 0.6;
+        border-bottom: 5px solid #ffc05c;
+    
+    }
+
+}

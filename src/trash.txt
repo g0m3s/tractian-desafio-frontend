@@ -1,0 +1,132 @@
+// if (screen == 'units') {
+
+    //     return(
+
+    //         <div style={{display: displayProperty}} className='Modal'>
+    
+    //             <main>
+    
+    //                 <div className='unitsInfoModa' >
+    
+    //                     <h3>Nome da unidade:</h3>
+    //                     {dataUnity.name}
+    
+    //                     <h3>Empresa da unidade:</h3>
+    //                     {dataUnity.name}
+    
+    //                 </div>
+    
+    //                 <p className='textAlterInfosModal' >
+    //                     Deseja alterar alguma informação?
+    //                     <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
+    //                 </p>
+    
+    //                 <div style={{display: displayDivEditInfos}} className='alterInfosModal' >
+    
+    //                     <input placeholder='Nome da unidade' onKeyDown={handleNameUnity} />
+    
+    //                     <select>
+    //                         <option>Empresa da unidade</option>
+    //                         <option>Empresa teste</option>
+    //                     </select>
+    
+    //                 </div>
+    
+    //             </main>
+    
+    //         </div>
+    //     )
+        
+    // } else if (screen == 'actives') {
+
+    //     return(
+
+    //         <div style={{display: displayProperty}} className='Modal'>
+    
+    //             <main>
+
+    //                 {console.log(dataUnity)}
+    
+    //                 <div className='activesInfoModal' >
+
+    //                     <h3>{dataUnity.name}</h3>
+
+    //                     <img src={dataUnity.image}/>
+
+    //                     <div className='infosActive' >
+
+    //                         <div className='defaultBox2'>
+    //                             <h4>Modelo: <b>{dataUnity.model}</b></h4>
+    //                         </div>
+    
+    //                         <div className='defaultBox2'>
+
+    //                             <h4>Status:</h4>
+
+    //                             {
+    //                                 dataUnity.status == 'inAlert' ?
+    //                                     <div className='lineInfosBoxActives' >
+    //                                         <span className="circleInAlert" ></span>
+    //                                         <p>Em alerta! - <b>{dataUnity.healthscore}% de saude</b></p>
+    //                                     </div>
+
+    //                                 : dataUnity.status == 'inDowntime' ?
+    //                                     <div className='lineInfosBoxActives' >
+    //                                         <span className="circleInDowntime" ></span>
+    //                                         <p>Em parada - <b>{dataUnity.healthscore}%</b> de saude</p>
+    //                                     </div>
+
+    //                                 :   
+    //                                     <div className='lineInfosBoxActives' >
+    //                                         <span className="circleInOperation" ></span>
+    //                                         <p>Em Operação! - <b>{dataUnity.healthscore}%</b> de saude</p>
+    //                                     </div>
+                                
+    //                             }
+
+    //                         </div>
+
+    //                         <div className='defaultBox2'>
+
+    //                             <h4>Métricas:</h4>
+
+    //                             {/* <ul>
+    //                                 <li>Última vez ativo:  
+    //                                     <b>{dataUnity.metrics.lastUptimeAt ? dataUnity.metrics.lastUptimeAt : ''}</b>
+    //                                 </li>
+    //                                 <li>Tempo total de coleta:  
+    //                                     <b>{dataUnity.metrics.lastUptimeAt ? dataUnity.metrics.lastUptimeAt : ''}</b>
+    //                                 </li>
+    //                                 <li>Tempo de atividade Total: 
+    //                                     <b>{dataUnity.metrics.lastUptimeAt ? dataUnity.metrics.lastUptimeAt : ''}</b>
+    //                                 </li>
+    //                             </ul> */}
+
+    //                         </div>
+                        
+    //                     </div>
+    
+    //                 </div>
+    
+    //                 <p className='textAlterInfosModal' >
+    //                     Deseja alterar alguma informação?
+    //                     <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
+    //                 </p>
+    
+    //                 <div style={{display: displayDivEditInfos}} className='alterInfoModalActives' >
+    
+    //                     <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+
+    //                     <input name='image' placeholder='Imagem' onChange={handleInfosActives} />
+
+    //                     <a className='buttonSendAlterActives' onClick={()=>{}} >Alterar</a>
+    
+    //                 </div>
+    
+    //             </main>
+    
+    //         </div>
+    //     )
+
+    // } 
+    
