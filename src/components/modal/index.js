@@ -259,7 +259,7 @@ function Modal (props) {
         
                             <h3>E-mail: <b>{dataUnity.email}</b></h3>
 
-                            <h3>Empresa: <b>{dataUnity.name}</b></h3>
+                            <h3>Unidade: <b>{dataUnity.unitName}</b></h3>
         
                         </div>
         
@@ -274,7 +274,7 @@ function Modal (props) {
 
                             <input name='email' placeholder='E-mail' onChange={handleInfosActives} />
 
-                            <a className='buttonSendAlterActives' onClick={()=>{}} >Alterar</a>
+                            <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
     
                         </div>
         

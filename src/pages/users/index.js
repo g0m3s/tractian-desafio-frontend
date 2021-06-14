@@ -87,19 +87,19 @@ function Users () {
 
                 <span className='spanTips' >Clique em um item para mais informações</span>
 
-                <section className='sectionActives' >
+                <section className='sectionUsers' >
 
                     <div className='leftSide' >
 
                         {users.map(item => (
 
-                            <div className='defaultBox flexDisplayBetween boxActives' onClick={() => { handleModalInfos(item) }}>
+                            <div className='boxUsers' onClick={() => { handleModalInfos(item) }}>
 
                                 <img src={userIcon} />
 
                                 <h3>{item.name}</h3>
                                 <h3>{item.unitName}</h3>
-                                <h3>E-mail: {item.email}</h3>
+                                <h3>{item.email}</h3>
                                 
                             </div>
                             

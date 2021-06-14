@@ -32,6 +32,7 @@ header {
 .menu {
 
     width: 40vw;
+    height: 100%;
     display: flex;
     padding-left: 5vw;
     flex-direction: row;
@@ -65,13 +66,6 @@ header {
     color: white;
 
 }
-
-/* .menu a:hover {
-
-    opacity: 0.6;
-    border-bottom: 5px solid white;
-
-} */
 
 .menu-mobile {
 
@@ -201,10 +195,11 @@ header {
         margin: 0;
         padding: 0;
         width: 90%;
+        height: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         list-style: none;
 
     }
@@ -234,13 +229,6 @@ header {
 
         font-size: 9pt;
 
-    }
-
-    .menu-mobile a:hover {
-
-        opacity: 0.6;
-        border-bottom: 5px solid #ffc05c;
-    
     }
 
 }

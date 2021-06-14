@@ -1,11 +1,7 @@
 import React, {useState, createRef} from 'react'
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import './style.css'
-import enterpriseIcon from '../../imgs/enterprise.png'
-import userIcon from '../../imgs/user.png'
-import unitsIcon from '../../imgs/units.png'
 import logoTractian1 from '../../imgs/logoTractian-2.png'
 
 export default function Header (props) {
@@ -40,7 +36,12 @@ export default function Header (props) {
                     <ul>
 
                         <li className='flexDisplayCenter' >
+                            <Link to='/home' className='flexDisplayBetween' >
+                                <p>Home</p>
+                            </Link>
+                        </li>
 
+                        <li className='flexDisplayCenter' >
                         <Link to='/ativos' className='flexDisplayBetween' >
                             <p>Ativos</p>
                         </Link>
@@ -48,23 +49,18 @@ export default function Header (props) {
                     </li>
 
                     <li className='flexDisplayCenter' >
-
                         <Link to='/empresas' className='flexDisplayBetween'>
                             <p>Empresas</p>
                         </Link>
-
                     </li>
 
                     <li className='flexDisplayCenter' >
-
                         <Link to='/unidades' className='flexDisplayBetween'>
                             <p>Unidades</p>
                         </Link>
-
                     </li>
                     
                     <li className='flexDisplayCenter' >
-
                         <Link to='/usuarios' className='flexDisplayBetween' >
                             <p>Usuários</p>
                         </Link>
@@ -106,14 +102,18 @@ export default function Header (props) {
                 <ul className='itensMenuMobile' >
 
                     <li className='flexDisplayCenter' >
+                        <Link to='/home' className='flexDisplayBetween' >
+                            <p>Home</p>
+                        </Link>
+                    </li>
 
+                    <li className='flexDisplayCenter' >
                         <Link to='/ativos' className='flexDisplayBetween' >
                             <p>Ativos</p>
                         </Link>
                     </li>
 
                     <li className='flexDisplayCenter' >
-
                         <Link to='/empresas' className='flexDisplayBetween'>
                             <p>Empresas</p>
                         </Link>
@@ -121,14 +121,12 @@ export default function Header (props) {
                     </li>
 
                     <li className='flexDisplayCenter' >
-
                         <Link to='/unidades' className='flexDisplayBetween'>
                             <p>Unidades</p>
                         </Link>
                     </li>
                     
                     <li className='flexDisplayCenter' >
-
                         <Link to='/usuarios' className='flexDisplayBetween' >
                             <p>Usuários</p>
                         </Link>
