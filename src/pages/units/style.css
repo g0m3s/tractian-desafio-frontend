@@ -12,6 +12,7 @@
     margin: 15px;
     padding: 10px;
     display: flex;
+    cursor: pointer;
     border-radius: 10px;
     align-items: center;
     justify-content: center;

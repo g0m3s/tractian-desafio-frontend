@@ -100,7 +100,32 @@ function Actives () {
 
                 </div>
 
-                <div className="rightSide" >lado direitsdao</div>
+                <div className="rightSide" >
+
+                    <h3 >Últimos insights:</h3>
+
+                    <div className='boxTips' >
+
+                        <p>Crescimento contínuo da vibração.</p>
+                        <span>13 de junho de 2021 às 15:34</span>
+
+                    </div>
+
+                    <div className='boxTips' >
+
+                        <p>Downtime detectado.</p>
+                        <span>13 de junho de 2021 às 07:45</span>
+
+                    </div>
+
+                    <div className='boxTips' >
+
+                        <p>Aumento súbito da velocidade RMS.</p>
+                        <span>12 de junho de 2021 às 12:35</span>
+
+                    </div>
+
+                </div>
                 
             </section>
 

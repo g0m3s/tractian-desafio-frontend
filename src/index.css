@@ -62,11 +62,12 @@ body {
 
 .leftSide {
 
-    width: 80vw;
+    width: 75vw;
+    padding-left: 3vw;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
@@ -82,8 +83,16 @@ body {
 
 }
 
+.rightSide h3 {
+
+    width: 100%;
+    text-align: center;
+
+}
+
 .boxTips {
 
+    width: 90%;
     padding: 15px;
     margin: 15px 0;
     color: white;
@@ -91,7 +100,6 @@ body {
     background-color: #185ef6;
 
 }
-
 
 .divModal {
 

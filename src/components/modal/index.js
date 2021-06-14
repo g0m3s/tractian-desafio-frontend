@@ -202,7 +202,7 @@ function Modal (props) {
     
                         <input name='name' placeholder='Nome' onChange={handleInfosActives} />
 
-                        <input name='image' placeholder='Imagem' onChange={handleInfosActives} />
+                        <input name='image' type='file' placeholder='Imagem' onChange={handleInfosActives} />
 
                         <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
     

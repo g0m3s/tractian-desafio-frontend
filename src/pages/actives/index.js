@@ -1,11 +1,10 @@
 import React, {useEffect, useState} from 'react'
 
 import LeftSideBar from '../../components/leftSideBar'
-
-import Highcharts from 'highcharts'
-import HighchartsReact from 'highcharts-react-official'
 import Modal from '../../components/modal'
+import {Link} from 'react-router-dom'
 import './style.css'
+
 
 function Actives () {
 
@@ -97,7 +96,7 @@ function Actives () {
 
             <section className='sectionActives' >
 
-                <div className='leftSide' >
+                <div className='leftSideActives' >
 
                     {actives.map(item => (
 
@@ -143,21 +142,26 @@ function Actives () {
             
                 <div className='rightSide' >
 
+                    <h3 >Últimos insights:</h3>
+
                     <div className='boxTips' >
 
-                        <p>Podemos já vislumbrar o modo pelo qual a revolução dos costumes auxilia a preparação e a composição do impacto na agilidade decisória.</p>
+                        <p>Crescimento contínuo da vibração.</p>
+                        <span>13 de junho de 2021 às 15:34</span>
 
                     </div>
 
                     <div className='boxTips' >
 
-                        <p>O incentivo ao avanço tecnológico, assim como a contínua expansão de nossa atividade maximiza as possibilidades por conta dos níveis de motivação departamental.</p>
+                        <p>Downtime detectado.</p>
+                        <span>13 de junho de 2021 às 07:45</span>
 
                     </div>
 
                     <div className='boxTips' >
 
-                        <p>O cuidado em identificar pontos críticos na crescente influência da mídia pode nos levar a considerar a reestruturação dos modos de operação convencionais.</p>
+                        <p>Aumento súbito da velocidade RMS.</p>
+                        <span>12 de junho de 2021 às 12:35</span>
 
                     </div>
 
