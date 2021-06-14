@@ -20,15 +20,7 @@ function Modal (props) {
         status: ""
     });
 
-    const [displayDivEditInfos, setDisplayDivEditInfos] = useState('none')
-
     const [infosActives, setInfosActives] = useState({name: '', image: ''})
-
-    function handleDisplayDivEditInfos () {
-
-        displayDivEditInfos == 'none' ? setDisplayDivEditInfos('flex') : setDisplayDivEditInfos('none')
-
-    }
 
     function updateUnitsInfos (newName) {
 
