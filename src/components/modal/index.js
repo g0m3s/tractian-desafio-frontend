@@ -121,8 +121,6 @@ function Modal (props) {
         return(
 
             <div style={{display: displayProperty}} className='Modal'>
-
-                {console.log(modalData)}
         
                 <main>
     
@@ -257,9 +255,21 @@ function Modal (props) {
 
                             <input name='name' placeholder='Nome' onChange={handleInfosActives} />
 
+                            <input name='model' placeholder='Modelo' onChange={handleInfosActives} />
+
                             <input name='image' type='file' placeholder='Imagem' onChange={handleInfosActives} />
 
-                            <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+                            <select>
+                                <option>Responsável</option>
+                                <option>Testador Um</option>
+                                <option>Testador Dois</option>
+                                <option>Testador Três</option>
+                                <option>Testador Quarto</option>
+                                <option>Testador Cinco</option>
+                                <option>Testador Seis</option>
+                            </select>
+
+                            <a className='buttonSendAlterModal' onClick={onClick} >Alterar</a>
                         
                         </div>
                     )}
