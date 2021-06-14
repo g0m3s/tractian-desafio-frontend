@@ -117,15 +117,11 @@ function Home () {
 
                         <div className='lineActivesReports' >
 
-                            <div className='boxHome' >
-
-                                <h3>{actives.length} Ativos</h3>
-
-                            </div>
+                            <h3>{actives.length} Ativos</h3>
 
                         </div>
 
-                        <div className='lineActivesReports' >
+                        <div className='lineActivesReports lineActivesReportsDesktop' >
 
                             <div className='boxHome' >
 
@@ -145,6 +141,32 @@ function Home () {
 
                                 <p>Parados</p>
                                 <p>{activesInDownTime}</p>
+
+                            </div>
+
+                        </div>
+
+                        <div className='lineActivesReportsMobile' >
+
+                            <div className='lineActivesReports' >
+
+                                <div className='boxHome maxWidth' >
+
+                                    <p>Em operação: {activesInOperation}</p>
+                                    
+                                </div>
+
+                                <div className='boxHome maxWidth' >
+
+                                    <p>Em alerta: {activesInAlert}</p>
+                                    
+                                </div>
+
+                                <div className='boxHome maxWidth' >
+
+                                    <p>Parados: {activesInDownTime}</p>
+                                    
+                                </div>
 
                             </div>
 

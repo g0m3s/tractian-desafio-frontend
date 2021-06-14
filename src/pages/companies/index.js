@@ -75,11 +75,9 @@ function Users () {
 
             <span className='spanTips' >Clique em um item para mais informações</span>
 
-            <section className='sectionActives' >
+            <section className='sectionCompanies'>
 
                 <div className='leftSide' >
-
-                    <section className='sectionCompanies'>
 
                     {companies.map(item => (
 
@@ -94,8 +92,6 @@ function Users () {
                         </div>
                         
                     ))}
-
-                    </section>
 
                 </div>
 

@@ -65,6 +65,7 @@ body {
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
 
 }
@@ -122,7 +123,8 @@ body {
 
     .leftSide {
 
-    
+        width: 90vw;
+
     }
 
     .rightSide {
@@ -130,6 +132,5 @@ body {
         display: none;
     
     }
-
 
 }

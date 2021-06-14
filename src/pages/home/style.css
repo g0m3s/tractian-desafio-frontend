@@ -94,6 +94,18 @@
 
 }
 
+.lineActivesReportsDesktop {
+
+    display: flex;
+
+}
+
+.lineActivesReportsMobile {
+
+    display: none;
+
+}
+
 .boxHome {
 
     display: flex;
@@ -142,10 +154,27 @@
 
     }
 
+    .lineActivesReports {
+
+        flex-direction: column;
+
+    }
+
+    .lineActivesReportsDesktop {
+
+        display: none;
+
+    }
+
+    .lineActivesReportsMobile {
+
+        display: flex;
+    
+    }
+
     .boxHome {
 
         min-width: 20vw;
-        min-height: 15vw;
         text-align: center;
 
     }

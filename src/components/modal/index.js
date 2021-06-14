@@ -178,7 +178,7 @@ function Modal (props) {
                                                 <b>{dataUnity.metrics.totalCollectsUptime ? dataUnity.metrics.totalCollectsUptime : ''}</b>
                                             </li>
                                             <li>Tempo de atividade Total: 
-                                                <b>{dataUnity.metrics.totalUptime ? dataUnity.metrics.totalUptime : ''}</b>
+                                                <b>{dataUnity.metrics.totalUptime ? (dataUnity.metrics.totalUptime).toFixed(2) : ''}</b>
                                             </li>
                                         </ul>
 

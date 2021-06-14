@@ -36,7 +36,7 @@ export default function Header (props) {
                     <ul>
 
                         <li className='flexDisplayCenter' >
-                            <Link to='/home' className='flexDisplayBetween' >
+                            <Link to='/' className='flexDisplayBetween' >
                                 <p>Home</p>
                             </Link>
                         </li>
@@ -102,7 +102,7 @@ export default function Header (props) {
                 <ul className='itensMenuMobile' >
 
                     <li className='flexDisplayCenter' >
-                        <Link to='/home' className='flexDisplayBetween' >
+                        <Link to='/' className='flexDisplayBetween' >
                             <p>Home</p>
                         </Link>
                     </li>
