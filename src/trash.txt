@@ -129,4 +129,31 @@
     //     )
 
     // } 
+
+
+
+
+
+
+
+
+
+    
+                    <p className='textAlterInfosModal' >
+                        Deseja alterar alguma informação?
+                        <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
+                    </p>
+
+
+
+
+    <div style={{display: displayDivEditInfos}} className='alterInfoModal' >
+    
+                        <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+
+                        <input name='image' type='file' placeholder='Imagem' onChange={handleInfosActives} />
+
+                        <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+    
+                    </div>
     

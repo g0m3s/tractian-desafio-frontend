@@ -1,6 +1,8 @@
 import React, { useEffect, useState} from "react";
 import "./style.css";
 
+import ReactCircleModal from 'react-circle-modal'
+
 function Modal (props) {
 
     const { displayProperty, modalData, screen} = props;
@@ -58,15 +60,6 @@ function Modal (props) {
         
     }
 
-    // function updateActivesInfos (newName, newImage) {
-        
-    //     infosActives
-
-    //     setDataUnity(temp)
-    //     alert('Nome alterado! saia desta tela para ver as alterações')
-        
-    // }
-
     useEffect(()=> {
 
         setDataUnity(modalData)
@@ -91,21 +84,38 @@ function Modal (props) {
         
                         </div>
         
-                        <p className='textAlterInfosModal' >
-                            Deseja alterar alguma informação?
-                            <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
-                        </p>
-        
-                        <div style={{display: displayDivEditInfos}} className='alterInfoModal' >
-        
-                            <input placeholder='Nome da unidade' onKeyDown={handleNameUnity} />
-        
-                            <select>
-                                <option>Empresa da unidade</option>
-                                <option>Empresa teste</option>
-                            </select>
-        
-                        </div>
+
+                        <ReactCircleModal
+
+                            backgroundColor="#FFF"
+                            toogleComponent={onClick => (
+
+                                <p className='textAlterInfosModal' >
+                                    Deseja alterar alguma informação?
+                                    <br/><b onClick={onClick} >clique aqui</b>
+                                </p>
+
+                            )}
+                            offsetX={0}
+                            offsetY={0}
+                        >
+                        {(onClick) => (
+                            <div className='alterInfoModal' >
+
+                                <span onClick={onClick} >X</span>
+
+                                <input placeholder='Nome da unidade' onKeyDown={handleNameUnity} />
+            
+                                <select>
+                                    <option>Empresa da unidade</option>
+                                    <option>Empresa teste</option>
+                                </select>
+
+                                <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+                            
+                            </div>
+                        )}
+                    </ReactCircleModal>
         
                     </main>
         
@@ -121,8 +131,6 @@ function Modal (props) {
             <div style={{display: displayProperty}} className='Modal'>
         
                 <main>
-
-                    {console.log(dataUnity)}
     
                     <div className='activesInfoModal' >
 
@@ -192,21 +200,35 @@ function Modal (props) {
                         </div>
     
                     </div>
-    
-                    <p className='textAlterInfosModal' >
-                        Deseja alterar alguma informação?
-                        <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
-                    </p>
-    
-                    <div style={{display: displayDivEditInfos}} className='alterInfoModal' >
-    
-                        <input name='name' placeholder='Nome' onChange={handleInfosActives} />
 
-                        <input name='image' type='file' placeholder='Imagem' onChange={handleInfosActives} />
+                    <ReactCircleModal
 
-                        <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
-    
-                    </div>
+                        backgroundColor="#FFF"
+                        toogleComponent={onClick => (
+
+                            <p className='textAlterInfosModal' >
+                                Deseja alterar alguma informação?
+                                <br/><b onClick={onClick} >clique aqui</b>
+                            </p>
+
+                        )}
+                        offsetX={0}
+                        offsetY={0}
+                    >
+                    {(onClick) => (
+                        <div className='alterInfoModal' >
+
+                            <span onClick={onClick} >X</span>
+
+                            <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+
+                            <input name='image' type='file' placeholder='Imagem' onChange={handleInfosActives} />
+
+                            <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+                        
+                        </div>
+                    )}
+                    </ReactCircleModal>
     
                 </main>
         
@@ -226,19 +248,34 @@ function Modal (props) {
                             <h3>Nome: <b>{dataUnity.name}</b></h3>
         
                         </div>
-        
-                        <p className='textAlterInfosModal' >
-                            Deseja alterar alguma informação?
-                            <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
-                        </p>
-        
-                        <div style={{display: displayDivEditInfos}} className='alterInfoModal' >
-        
-                            <input name='name' placeholder='Nome' onChange={handleInfosActives} />
 
-                            <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
-    
-                        </div>
+                        <ReactCircleModal
+
+                            backgroundColor="#FFF"
+                            toogleComponent={onClick => (
+
+                                <p className='textAlterInfosModal' >
+                                    Deseja alterar alguma informação?
+                                    <br/><b onClick={onClick} >clique aqui</b>
+                                </p>
+
+                            )}
+                            offsetX={0}
+                            offsetY={0}
+                        >
+                            {(onClick) => (
+                                <div className='alterInfoModal' >
+
+                                    <span onClick={onClick} >X</span>
+
+                                    <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+
+                                    <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+                                
+                                </div>
+                            )}
+                        </ReactCircleModal>
+        
         
                     </main>
         
@@ -263,20 +300,34 @@ function Modal (props) {
         
                         </div>
         
-                        <p className='textAlterInfosModal' >
-                            Deseja alterar alguma informação?
-                            <br/><b onClick={handleDisplayDivEditInfos} >clique aqui</b>
-                        </p>
-        
-                        <div style={{display: displayDivEditInfos}} className='alterInfoModal' >
-        
-                            <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+                        <ReactCircleModal
 
-                            <input name='email' placeholder='E-mail' onChange={handleInfosActives} />
+                            backgroundColor="#FFF"
+                            toogleComponent={onClick => (
 
-                            <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
-    
-                        </div>
+                                <p className='textAlterInfosModal' >
+                                    Deseja alterar alguma informação?
+                                    <br/><b onClick={onClick} >clique aqui</b>
+                                </p>
+
+                            )}
+                            offsetX={0}
+                            offsetY={0}
+                        >
+                            {(onClick) => (
+                                <div className='alterInfoModal' >
+
+                                    <span onClick={onClick} >X</span>
+
+                                    <input name='name' placeholder='Nome' onChange={handleInfosActives} />
+
+                                    <input name='email' placeholder='E-mail' onChange={handleInfosActives} />
+
+                                    <a className='buttonSendAlterModal' onClick={()=>{}} >Alterar</a>
+                                
+                                </div>
+                            )}
+                        </ReactCircleModal>
         
                     </main>
         

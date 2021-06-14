@@ -132,6 +132,7 @@ body {
     .leftSide {
 
         width: 90vw;
+        padding-left: 0;
 
     }
 
