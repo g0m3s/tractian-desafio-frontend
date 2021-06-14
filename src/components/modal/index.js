@@ -16,7 +16,7 @@ function Modal (props) {
         model: "",
         name: "",
         sensors: [],
-        specifications: {},
+        specifications: [],
         status: ""
     });
 
@@ -121,6 +121,8 @@ function Modal (props) {
         return(
 
             <div style={{display: displayProperty}} className='Modal'>
+
+                {console.log(modalData)}
         
                 <main>
     
@@ -185,8 +187,49 @@ function Modal (props) {
                                     )
                                     : ''
                                 }
-                                
 
+                            </div>
+
+                            <div className='defaultBox2'>
+
+                                <h4>Sensores:</h4>
+
+                                {
+                                    dataUnity.sensors ? (
+
+                                        <ul>
+
+                                            {dataUnity.sensors.map((item)=>(
+
+                                                <li>{item}</li>
+                                            ))}
+                                        </ul>
+                                    )
+
+                                    : ''
+                                }
+                                
+                            </div>
+
+                            <div className='defaultBox2'>
+
+                                <h4>Especificações:</h4>
+
+                                {
+                                    dataUnity.specifications ? (
+
+                                        <ul>
+
+                                            {dataUnity.specifications.maxTemp ? <li>Temperatura máxima: <b>{dataUnity.specifications.maxTemp}</b></li> : ''}
+                                            {dataUnity.specifications.power ? <li> Potência em kWh: <b>{dataUnity.specifications.power}</b></li> : ''}
+                                            {dataUnity.specifications.rpm ? <li>RPM: <b>{dataUnity.specifications.rpm}</b></li> : ''}
+
+                                        </ul>
+                                    )
+
+                                    : ''
+                                }
+                                
                             </div>
                         
                         </div>
